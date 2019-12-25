@@ -1,42 +1,35 @@
 {
   "project_info": {
-    "project_number": "609074796075",
-    "firebase_url": "https://restalksflutterfirebase.firebaseio.com",
-    "project_id": "restalksflutterfirebase",
-    "storage_bucket": "restalksflutterfirebase.appspot.com"
+    "project_number": "103850069751",
+    "firebase_url": "https://flutter-chat-example.firebaseio.com",
+    "project_id": "flutter-chat-example",
+    "storage_bucket": "flutter-chat-example.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:609074796075:android:62959537ce9cef67d8fc6e",
+        "mobilesdk_app_id": "1:103850069751:android:34b9d6f90f5abb13f8cdf2",
         "android_client_info": {
-          "package_name": "com.example.restalksflutterfirebase"
+          "package_name": "com.flutterchatexample"
         }
       },
       "oauth_client": [
         {
-          "client_id": "609074796075-45reh1ecbd1u7h13moll98c9ik0kfr35.apps.googleusercontent.com",
+          "client_id": "103850069751-7lfi2l3ecl5o4r42i65kugfh1du8tbi2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBOrKk1AgIBAsOaelNmaIFXgm26R2mmChQ"
+          "current_key": "AIzaSyC2StLT26Yrq7hvUMInHQXrW1NEgZa-qIg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "609074796075-45reh1ecbd1u7h13moll98c9ik0kfr35.apps.googleusercontent.com",
+              "client_id": "103850069751-7lfi2l3ecl5o4r42i65kugfh1du8tbi2.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "609074796075-l9lm5tjq2rnu7s8220t7qbu125nb0ia7.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.restalksflutterfirebase"
-              }
             }
           ]
         }

@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
-import 'package:restalksflutterfirebase/modules/firebase/repositories/firebaseRepository.dart';
+import 'package:flutterchatexample/modules/firebase/repositories/firebaseRepository.dart';
 import './bloc.dart';
 
 class ItemBloc extends Bloc<ItemEvent, ItemState> {

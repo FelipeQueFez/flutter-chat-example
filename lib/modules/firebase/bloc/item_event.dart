@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:restalksflutterfirebase/modules/firebase/models/personModel.dart';
+import 'package:flutterchatexample/modules/firebase/models/personModel.dart';
 import 'package:meta/meta.dart';
 
 abstract class ItemEvent extends Equatable {

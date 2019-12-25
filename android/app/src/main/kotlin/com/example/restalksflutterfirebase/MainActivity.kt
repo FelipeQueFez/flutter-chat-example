@@ -1,4 +1,4 @@
-package com.example.restalksflutterfirebase
+package com.flutterchatexample
 
 import android.os.Bundle
 

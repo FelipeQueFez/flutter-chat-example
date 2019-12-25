@@ -1,4 +1,4 @@
-# Restalks Flutter Firebase
+# Flutter Chat Example
 
 A Flutter project example with firebase integration.
 

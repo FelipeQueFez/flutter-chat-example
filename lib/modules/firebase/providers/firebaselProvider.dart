@@ -1,6 +1,8 @@
-import 'package:restalksflutterfirebase/modules/firebase/models/personEntity.dart';
-import 'package:restalksflutterfirebase/modules/firebase/models/personModel.dart';
-import 'package:restalksflutterfirebase/modules/firebase/providers/firestoreInstanceProvider.dart';
+
+
+import 'package:flutterchatexample/modules/firebase/models/personEntity.dart';
+import 'package:flutterchatexample/modules/firebase/models/personModel.dart';
+import 'package:flutterchatexample/modules/firebase/providers/firestoreInstanceProvider.dart';
 
 class FirebaseProvider {
   final FirestoreInstanceProvider _instance = new FirestoreInstanceProvider();

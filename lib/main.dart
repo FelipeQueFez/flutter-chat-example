@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:restalksflutterfirebase/view/ExemploFirebase.dart';
+import 'package:flutterchatexample/view/ExemploFirebase.dart';
 
 void main() => runApp(MyApp());
 

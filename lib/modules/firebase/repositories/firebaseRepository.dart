@@ -1,6 +1,8 @@
 
-import 'package:restalksflutterfirebase/modules/firebase/models/personModel.dart';
-import 'package:restalksflutterfirebase/modules/firebase/providers/firebaselProvider.dart';
+
+
+import 'package:flutterchatexample/modules/firebase/models/personModel.dart';
+import 'package:flutterchatexample/modules/firebase/providers/firebaselProvider.dart';
 
 class FirebaseRepository {
   final FirebaseProvider _provider = new FirebaseProvider();
