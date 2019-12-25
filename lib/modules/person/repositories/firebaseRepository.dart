@@ -1,8 +1,5 @@
-
-
-
-import 'package:flutterchatexample/modules/firebase/models/personModel.dart';
-import 'package:flutterchatexample/modules/firebase/providers/firebaselProvider.dart';
+import 'package:flutterchatexample/modules/person/models/personModel.dart';
+import 'package:flutterchatexample/modules/person/providers/firebaselProvider.dart';
 
 class FirebaseRepository {
   final FirebaseProvider _provider = new FirebaseProvider();

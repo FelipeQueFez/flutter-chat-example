@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutterchatexample/modules/firebase/bloc/item_bloc.dart';
-import 'package:flutterchatexample/modules/firebase/bloc/item_event.dart';
-import 'package:flutterchatexample/modules/firebase/bloc/item_state.dart';
-import 'package:flutterchatexample/modules/firebase/models/personModel.dart';
+import 'package:flutterchatexample/modules/person/bloc/item_bloc.dart';
+import 'package:flutterchatexample/modules/person/bloc/item_event.dart';
+import 'package:flutterchatexample/modules/person/bloc/item_state.dart';
+import 'package:flutterchatexample/modules/person/models/personModel.dart';
 
 class ExemploFirebase extends StatefulWidget {
   ExemploFirebase({Key key, this.title}) : super(key: key);

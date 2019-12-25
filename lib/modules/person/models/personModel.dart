@@ -1,6 +1,7 @@
 
 
-import 'package:flutterchatexample/modules/firebase/models/personEntity.dart';
+
+import 'package:flutterchatexample/modules/person/models/personEntity.dart';
 
 class PersonModel {
   String documentID;

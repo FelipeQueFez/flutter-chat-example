@@ -1,8 +1,6 @@
-
-
-import 'package:flutterchatexample/modules/firebase/models/personEntity.dart';
-import 'package:flutterchatexample/modules/firebase/models/personModel.dart';
 import 'package:flutterchatexample/modules/firebase/providers/firestoreInstanceProvider.dart';
+import 'package:flutterchatexample/modules/person/models/personEntity.dart';
+import 'package:flutterchatexample/modules/person/models/personModel.dart';
 
 class FirebaseProvider {
   final FirestoreInstanceProvider _instance = new FirestoreInstanceProvider();
