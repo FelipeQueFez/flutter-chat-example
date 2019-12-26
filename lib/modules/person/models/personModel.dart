@@ -5,30 +5,30 @@ import 'package:flutterchatexample/modules/person/models/personEntity.dart';
 
 class PersonModel {
   String documentID;
-  String name;
-  int age;
+  String alias;
+  String email;
 
-  PersonModel({this.documentID, this.name, this.age});
+  PersonModel({this.documentID, this.alias, this.email});
 
   factory PersonModel.fromJson(Map<String, dynamic> json) {
     return PersonModel(
-      name: json['name'],
-      age: json['age']
+      alias: json['alias'],
+      email: json['email']
     );
   }
 
   toJson() {
     return {
-      "name": name,
-      "age": age,
+      "alias": alias,
+      "email": email,
     };
   }
 
   static PersonModel fromEntity(PersonEntity entity) {
     return PersonModel(
       documentID: entity.id,
-      age: entity.age,
-      name: entity.name,
+      email: entity.email,
+      alias: entity.alias,
     );
   }
 }

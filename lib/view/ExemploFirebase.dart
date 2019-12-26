@@ -5,6 +5,7 @@ import 'package:flutterchatexample/modules/person/bloc/item_bloc.dart';
 import 'package:flutterchatexample/modules/person/bloc/item_event.dart';
 import 'package:flutterchatexample/modules/person/bloc/item_state.dart';
 import 'package:flutterchatexample/modules/person/models/personModel.dart';
+import 'package:flutterchatexample/view/chat.dart';
 
 class ExemploFirebase extends StatefulWidget {
   ExemploFirebase({Key key, this.title}) : super(key: key);
@@ -64,8 +65,12 @@ class ExemploFirebaseState extends State<ExemploFirebase> {
   Widget _buildItem(PersonModel person) {
     return ListTile(
       leading: Icon(Icons.supervisor_account),
-      title: Text(person.name),
-      subtitle: Text(person.age.toString() + (person.age > 1 ? " anos" : " ano")),
+      title: Text(person.alias),
+      subtitle: Text(person.email.toString()),
+      onTap: (){
+                Navigator.push(
+                              context, MaterialPageRoute(builder: (context) => Chat(peerId: "123", peerAvatar: "abc",)));
+      },
     );
   }
 
@@ -75,8 +80,8 @@ class ExemploFirebaseState extends State<ExemploFirebase> {
 
   Future<void> _newPersonDialog() async {
 
-    String name;
-    int age;
+    String alias;
+    String email;
 
     return showDialog<void>(
       context: context,
@@ -92,22 +97,19 @@ class ExemploFirebaseState extends State<ExemploFirebase> {
                     children: <Widget>[
                       TextFormField(
                         decoration: InputDecoration(
-                          hintText: "Nome"
+                          hintText: "Apelido"
                         ),
                         onChanged: (value) {
-                          name = value.toString();
+                          alias = value.toString();
                         },
                       ),
                        TextFormField(
                         decoration: InputDecoration(
-                          hintText: "Idade"
+                          hintText: "Email"
                         ),
-                        keyboardType: TextInputType.number,
-                        inputFormatters: <TextInputFormatter>[
-                            WhitelistingTextInputFormatter.digitsOnly
-                        ],
+                        keyboardType: TextInputType.emailAddress,
                         onChanged: (value) {
-                          age = int.parse(value);
+                          email = value;
                         },
                       ),
                     ],
@@ -126,7 +128,7 @@ class ExemploFirebaseState extends State<ExemploFirebase> {
             FlatButton(
               child: Text('Adicionar'),
               onPressed: () {
-                PersonModel model = PersonModel(age: age, name: name);
+                PersonModel model = PersonModel(email: email, alias: alias);
                 bloc.add(AddItem(item: model));
                 Navigator.of(context).pop();
               },
